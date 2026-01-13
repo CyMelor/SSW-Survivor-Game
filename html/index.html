@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸存者游戏</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info game-info-left">
+            <div class="score">生命值: <span id="score">0</span></div>
+            <div class="instructions">使用 WASD 控制角色移动 <br> Q: 暂停/继续 <br> R: 重启</div>
+        </div>
+        <div class="game-content">
+            <canvas id="gameCanvas" width="1080" height="720"></canvas>
+        </div>
+        <div class="game-info game-info-right">
+            <div class="game-controls">
+                <button id="startButton" class="start-button">开始游戏</button>
+                <div id="gameStatus" class="game-status"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/game.js"></script>
+</body>
+</html>
